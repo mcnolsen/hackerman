@@ -6,10 +6,12 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+<script src="app/app.js"/>
 <div class="navbar">
     <a class="active" href="index.html"> Home </a>
     <a href="Hellothere.html"> Hello there</a>
 </div>
+    <div align="center">
     <h1>Hello there</h1>
     <p><a href="Hellothere.html">Hello there</a> </p>
     <h2>Omegalul</h2>
@@ -17,6 +19,21 @@
     <label>
         <textarea>Hello there</textarea>
     </label>
-    <script src="app/app.js">  </script>
+    <h3>Login form</h3>
+    <form id="login-form">
+    <input id="user" type="username" placeholder="Enter username here" value=""/>
+    <input id="password" type="password" placeholder="Enter password here" value=""/>
+    <input id="logon" type="submit" value="login" onClick="checkLogin()"/>
+    </form>
+
+    <h3>Register</h3>
+    <form id="register">
+        <input id="user" type="username" placeholder="Enter username here" value=""/>
+        <input id="password" type="password" placeholder="Enter password here" value=""/>
+        <input id="register" type="submit" value="register" onClick="storeLogin()"/>
+    </form>
+    </div>
+
+<script src="app/app.js">  </script>
 </body>
 </html>
