@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+</head>
+<script src="reserveData.js"></script>
+<script src="birthDay.js"></script>
+<body onload="getYears(); getYearsReserve()">
+<form id="myForm">
+    <p>Your rating:</p>
+    <input type="radio" name="rating" value="awesome"> Awesome <br/>
+    <input type="radio" name="rating" value="mediocre"> Mediocre <br/>
+    <input type="radio" name="rating" value="lame"> Lame <br/>
+    <p>Full name</p>
+    <input type="text" name="name" value=""> <br/>
+    <p>Organisation:</p>
+    <input type="text" name="organisation" value=""> <br/>
+    <p>Phone number:</p>
+    <input type="text" name="phone-number" value=""> <br/>
+    <p>Date of birth:</p>
+
+    <select name="day" id="day">
+        <option value="0" selected="selected">--dd-- (Select month first)</option>
+
+    </select>
+
+    <select name="month" value="" id="month" onchange="getDays()">
+        <option value="0" selected="selected">--mm--</option>
+        <option value="1" >januar</option>
+        <option value="2" >februar</option>
+        <option value="3" >marts</option>
+        <option value="4" >april</option>
+        <option value="5" >maj</option>
+        <option value="6" >juni</option>
+        <option value="7" >juli</option>
+        <option value="8" >august</option>
+        <option value="9" >september</option>
+        <option value="10" >oktober</option>
+        <option value="11" >november</option>
+        <option value="12" >december</option>
+
+    </select>
+
+    <select name="year" id="year">
+        <option value="" selected="selected">--yy--</option>
+
+    </select>
+    <br/>
+    <p>Prefered date to meet:</p>
+
+    <select name="dayReserve" id="dayReserve">
+        <option value="0" selected="selected">--dd-- (Select month first)</option>
+
+    </select>
+
+    <select name="monthReserve" value="" id="monthReserve" onchange="getDaysReserve()">
+        <option value="0" selected="selected">--mm--</option>
+        <option value="1" >januar</option>
+        <option value="2" >februar</option>
+        <option value="3" >marts</option>
+        <option value="4" >april</option>
+        <option value="5" >maj</option>
+        <option value="6" >juni</option>
+        <option value="7" >juli</option>
+        <option value="8" >august</option>
+        <option value="9" >september</option>
+        <option value="10" >oktober</option>
+        <option value="11" >november</option>
+        <option value="12" >december</option>
+
+    </select>
+
+    <select name="yearReserve" id="yearReserve">
+        <option value="" selected="selected">--yy--</option>
+
+    </select> <br/> <br/>
+    <p>My Message:</p>
+    <textarea style="width:30%;height:30%;">What I want to enquire about.</textarea>
+    <br/>
+    <button type = "button" onclick="">Send that mofo message</button>
+
+</form>
+</body>
+</html>
