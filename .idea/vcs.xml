@@ -16,6 +16,7 @@
     <mapping directory="$PROJECT_DIR$/chapter_3" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/chapter_4" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/chapter_5" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ex07-08" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/myapp" vcs="Git" />
   </component>
 </project>
